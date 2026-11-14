@@ -2,43 +2,7 @@
 <html>
     <head>
         <title>Rovers</title>
-        <style>
-            :root {
-                --dark: #2F2257;
-                --dark2: #564F6A;
-                --text: #EEE5E9;
-                --accent: tomato;
-                --accent2: #52DEE5;
-            }
-            .center {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: var(--text);
-                border: 3px solid green;
-            }
-            .space {
-                width: 80%;
-                height: 80%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: var(--dark);
-                border: 1px solid gold;
-            }
-            .bkgd {
-                width: 99vw;
-                height: 99vh;
-                background-image: url("https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/september/M83_Final2_1x.jpg?w=3828&h=3798&fit=clip&crop=faces%2Cfocalpoint");
-                margin: 0;
-                background-size: 100% 100% ;
-            }
-            body {
-                margin: 0;
-                padding: 0;
-            }
+        <link rel="stylesheet" href="style.css">
         </style>
     </head>
     <body>
@@ -54,15 +18,6 @@
         </div>
     </body>
     <script src="pullrqts.js"></script>
-    <script>
-        const canvas = document.getElementById("cnvs");
-        const ctx = canvas.getContext("2d");
-        ctx.fillStyle = "Tomato";
-        ctx.beginPath();
-        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-        ctx.lineWidth = 0;
-        ctx.stroke();
-        ctx.fill();
-    </script>
+    <script src="planets.js"></script>
     
 </html>
