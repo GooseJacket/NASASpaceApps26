@@ -1,4 +1,4 @@
-const url = 'https://api.nasa.gov/planetary/apod?api_key='
+/*const url = 'https://api.nasa.gov/planetary/apod?api_key='
 const api_key = "DEMO_KEY" //config.NASA_API_KEY
 
 
@@ -15,5 +15,8 @@ const fetchNASAData = async () => {
 }
 
 
-fetchNASAData()
+fetchNASAData()*/
 
+//Temp
+const bkgd = document.getElementById("background");
+bkgd.setAttribute("background-image", "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/september/M83_Final2_1x.jpg?w=3828&h=3798&fit=clip&crop=faces%2Cfocalpoint")
