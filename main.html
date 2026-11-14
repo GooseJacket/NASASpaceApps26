@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CSS JS</title>
+    </head>
+    <body>
+        <h1 id="welcome">HTML CSS JS</h1>
+        <canvas id="space">
+        </canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("space");
+        const ctx = canvas.getContext("2d");
+        ctx.fillRect(0, 0, 150, 75);
+
+        ctx.fillStyle = "Tomato";
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fill();
+    </script>
+</html>
