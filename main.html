@@ -29,23 +29,25 @@
         </style>
     </head>
     <body>
-        <div class="center">
-            <div class="space">
-                <p class="in-space">I should be in the center</p>
-                <br>
-                <canvas id="cnvs" class="in-space">
-                </canvas>
+        <div id="background">
+            <div class="center">
+                <div class="space">
+                    <p class="in-space">I should be in the center</p>
+                    <br>
+                    <canvas id="cnvs" class="in-space">
+                    </canvas>
+                </div>
             </div>
         </div>
     </body>
+    <script src="pullrqts.js"></script>
     <script>
         const canvas = document.getElementById("cnvs");
         const ctx = canvas.getContext("2d");
-        ctx.fillRect(0, 0, 150, 75);
-
         ctx.fillStyle = "Tomato";
         ctx.beginPath();
         ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.lineWidth = 0;
         ctx.stroke();
         ctx.fill();
     </script>
