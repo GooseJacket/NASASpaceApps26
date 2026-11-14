@@ -3,26 +3,32 @@
     <head>
         <title>Rovers</title>
         <style>
-        .center {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: blue;
-            border: 3px solid green;
-        }
-        .space {
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #2F2257;
-            border: 1px solid gold;
-        }
-    </style>
+            :root {
+                --dark: #2F2257;
+                --dark2: #564F6A;
+                --text: #EEE5E9;
+                --accent: tomato;
+                --accent2: #52DEE5;
+            }
+            .center {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--text);
+                border: 3px solid green;
+            }
+            .space {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--dark);
+                border: 1px solid gold;
+            }
+        </style>
     </head>
     <body>
-        <h1 id="welcome">HTML CSS JS</h1>
         <div class="center">
             <div class="space">
                 <p class="in-space">I should be in the center</p>
