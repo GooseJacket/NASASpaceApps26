@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML CSS JS</title>
+        <title>Rovers</title>
+        <style>
+        .center {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            border: 3px solid green;
+        }
+        .space {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2F2257;
+            border: 1px solid gold;
+        }
+    </style>
     </head>
     <body>
         <h1 id="welcome">HTML CSS JS</h1>
-        <canvas id="space">
-        </canvas>
+        <div class="center">
+            <div class="space">
+                <p class="in-space">I should be in the center</p>
+                <br>
+                <canvas id="cnvs" class="in-space">
+                </canvas>
+            </div>
+        </div>
     </body>
     <script>
-        const canvas = document.getElementById("space");
+        const canvas = document.getElementById("cnvs");
         const ctx = canvas.getContext("2d");
         ctx.fillRect(0, 0, 150, 75);
 
@@ -19,4 +43,5 @@
         ctx.stroke();
         ctx.fill();
     </script>
+    
 </html>
