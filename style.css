@@ -106,3 +106,21 @@ h1 {
     grid-row: 1;
 }
 
+#sources {
+    background-color: var(--dark2);
+
+}
+
+a:link{
+    color: var(--accent2)
+}
+
+a:visited{
+    color: var(--accent)
+}
+
+.infobox {
+    display: grid;
+    background-color: var(--dark2);
+    border-radius: 5px;
+}

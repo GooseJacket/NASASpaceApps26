@@ -1,12 +1,20 @@
 @-webkit-keyframes orbit {
-    from {  -webkit-transform: rotate(0deg) translateX(25vh) rotate(0deg); }
-    to   {  -webkit-transform: rotate(360deg) translateX(25vh) rotate(-360deg); }
+    from {  -webkit-transform: rotate(0deg) translateX(15vh) rotate(0deg); }
+    to   {  -webkit-transform: rotate(360deg) translateX(15vh) rotate(-360deg); }
 }
 .dawn {
   position:absolute;
   top:25%;
-  margin:50px;
+  margin:10px;
   animation: orbit 60s forwards infinite;
   animation-timing-function: linear;
 }
 
+#sources{
+  display: "none";
+}
+
+#dawn:hover{
+  width: 15vw;
+  height: auto;
+}
