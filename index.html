@@ -14,8 +14,18 @@
                     </div>
                     <div class="middle">
                         <div class="leftHalf"> 
-                            <img src="https://nssdc.gsfc.nasa.gov/image/planetary/mars/marsglobe3.jpg", class="mars", id="mars", title="Mars"></img>
+                            <div class="traverse">
+                                <img src="https://nssdc.gsfc.nasa.gov/image/planetary/mars/marsglobe3.jpg", class="mars", id="mars", title="Mars"></img>
+                            </div>
+                            <div class="traverse">
+                                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia01/pia01122/PIA01122.jpg?w=1024&h=943&fit=crop&crop=faces%2Cfocalpoint", class="sojourner", id="sojourner", title="sojourner" onclick="showInfo('Sojourner')"></img>
+                            </div>    
+                            <div class="traverse">
+
+                            </div>
+                            <div class="traverse">
                                 
+                            </div>
                         </div>
                         <div class="rightHalf">
                             <div class="orbit">
@@ -26,9 +36,9 @@
                             </div>
                         </div>
                         <div class="infoHalf">
-                            <p style="margin: 2px">Click on a picture to learn more about a planet or mission!</p>
+                            <p class="instructions", style="margin: 2px">Click on a picture to learn more about a planet or mission!</p>
                             <div class="infobox", id="infobox", style="display: none">
-                                <h3 id="info-title">ShouldNeverShow</h3>
+                                <h3 id="info-title", style="text-align: center">ShouldNeverShow</h3>
                                 <iframe id="info" width="100%", height="80%", style="border: none"></iframe>
                                 <img>
                             </div>
@@ -41,6 +51,7 @@
                             Mars: <a href="hhttps://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-mars.html">NSSDCA Photo Gallery</a><br>
                             Ceres: <a href="https://nineplanets.org/ceres/">Nine Planets</a><br>
                             Dawn: <a href="https://science.nasa.gov/photojournal/earths-reflection-in-dawn-spacecraft-artists-concept/">Earth's Reflection in Dawn</a>, <a href="https://science.nasa.gov/missions/dawn/10-great-shots-from-the-dawn-mission/">10 Great Shots from Dawn</a><br>
+                            Sojourner: <a href="https://science.nasa.gov/photojournal/sojourner-rover-near-the-dice/">Near the Dice</a>, <a href="https://science.nasa.gov/mission/mars-pathfinder/">Pathfinder</a> <br>
                             Coding Assistance: <a href="https://www.w3schools.com">W3 Schools</a>, <a href="stackoverflow.com">Stack Overflow</a> <br>
                             Published using Github Pages
                             </p>

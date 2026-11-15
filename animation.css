@@ -14,7 +14,7 @@
   display: "none";
 }
 
-#dawn:hover{
+#dawn:hover, #sojourner:hover{
   width: 15vw;
   height: auto;
 }
