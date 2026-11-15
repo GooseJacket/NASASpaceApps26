@@ -3,9 +3,9 @@
   }
 
 .dawn {
-    offset-path: path('M 50 80 A 10 10 10 0 0 50,0 A 10 10 10 0 0 50,80');
+    offset-path: path('M 0 10 A 10 10 10 0 0 0,-10 A 10 10 10 0 0 0,10');
     offset-rotate: auto;
-    animation: moveImg 50s;
+    animation: moveImg 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;

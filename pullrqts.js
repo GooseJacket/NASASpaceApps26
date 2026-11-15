@@ -18,5 +18,5 @@ const fetchNASAData = async () => {
 const bkgd = document.getElementById("background");
 bkgd.setAttribute("background-image", "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/september/M83_Final2_1x.jpg?w=3828&h=3798&fit=clip&crop=faces%2Cfocalpoint")
 
-#fetchNASAData()
+//fetchNASAData()
 

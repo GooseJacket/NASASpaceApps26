@@ -31,18 +31,22 @@ body {
 }
 
 .mars {
-    width: 20vw;
+    width: 25vw;
     max-width: 100%;
     height: auto;
     border-radius: 100%;
 }
 .ceres {
-    width: 5vw;
+    width: 15vw;
     height: auto;
 }
 .dawn {
     width: 10vw;
     height: auto;
+}
+
+.ceres, .dawn {
+
 }
 
 .top, .bottom, .middle, .leftHalf, .rightHalf {
@@ -72,20 +76,35 @@ h1 {
 }
 
 .middle {
-    display: grid;
+    display: flex;
     width: 80vw;
     height: 60vh;
     top: 20vw;
     padding: 0;
 }
 
-.leftHalf, .rightHalf {
-    width: 38vw;
+.leftHalf {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 40vw;
 }
 
 .rightHalf {
+    width: 40vw;
 
+}
+
+.orbit {
+    width: 8vw;
+    height: auto;
+    display: flex;
+    align-content: center;
+  justify-content: center;
+  background: yellow;
+}
+
+svg, path {
+    z-index: 1
 }
