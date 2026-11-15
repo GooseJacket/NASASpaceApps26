@@ -14,7 +14,7 @@
   display: "none";
 }
 
-#dawn:hover, #sojourner:hover{
+#dawn:hover, #sojourner:hover, #ingenuity:hover{
   width: 15vw;
   height: auto;
 }
