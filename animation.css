@@ -1,13 +1,12 @@
-@keyframes spinAnimation {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+@keyframes moveImg {
+    100%  { offset-distance: 100%; }
+  }
 
 .dawn {
-  animation-name: spinAnimation;
-  animation-duration: 50s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: both;
+    offset-path: path('M 50 80 A 10 10 10 0 0 50,0 A 10 10 10 0 0 50,80');
+    offset-rotate: auto;
+    animation: moveImg 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
 }
