@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     color: var(--text);
-    background-image: url("https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/september/M83_Final2_1x.jpg?w=3828&h=3798&fit=clip&crop=faces%2Cfocalpoint");
     margin: 0;
     background-size: 100% 100% ;
 }

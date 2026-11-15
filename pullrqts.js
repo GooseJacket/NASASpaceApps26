@@ -8,15 +8,14 @@ const fetchNASAData = async () => {
     const data = await response.json()
     console.log('NASA APOD data', data)
     const bkgd = document.getElementById("center");
-    bkgd.setAttribute("background-image", data.hdurl)
+    bkgd.style.backgroundImage = "url(" + data.hdurl + ")";
   } catch (error) {
-    console.log(error)
+    console.log(error);
+    
   }
 }
 
-//Temp
-const bkgd = document.getElementById("center");
-bkgd.setAttribute("background-image", "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/september/M83_Final2_1x.jpg?w=3828&h=3798&fit=clip&crop=faces%2Cfocalpoint")
-
 //fetchNASAData()
 
+const bkgd = document.getElementById("center");
+bkgd.style.backgroundImage = "url(https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/september/M83_Final2_1x.jpg?w=3828&h=3798&fit=clip&crop=faces%2Cfocalpoint)"
