@@ -45,10 +45,6 @@ body {
     height: auto;
 }
 
-.ceres, .dawn {
-
-}
-
 .top, .bottom, .middle, .leftHalf, .rightHalf {
     padding: 0;
     margin: 0;
@@ -93,18 +89,20 @@ h1 {
 
 .rightHalf {
     width: 40vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
 
 }
 
 .orbit {
-    width: 8vw;
-    height: auto;
-    display: flex;
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    top: -10vh;
     align-content: center;
-  justify-content: center;
-  background: yellow;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 1;
 }
 
-svg, path {
-    z-index: 1
-}

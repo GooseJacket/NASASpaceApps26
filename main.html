@@ -7,26 +7,36 @@
         </style>
     </head>
     <body>
-            <div class="center">
+            <div class="center", id="center">
                 <div class="space">
                     <div class="top">
                         <h1>What We Left Behind</h1>
                     </div>
                     <div class="middle">
-                        <div class="leftHalf">
-                            <img src="https://nssdc.gsfc.nasa.gov/image/planetary/mars/marsglobe3.jpg", class="mars", id="mars"></img>
-                            <img src="https://nineplanets.org/wp-content/uploads/2019/09/ceres.png", class="ceres", id="ceres">
+                        <div class="leftHalf"> 
+                            <img src="https://nssdc.gsfc.nasa.gov/image/planetary/mars/marsglobe3.jpg", class="mars", id="mars", title="Mars"></img>
                                 
                         </div>
                         <div class="rightHalf">
                             <div class="orbit">
-<svg fill="none" stroke="gray" stroke-width="2" stroke-dasharray="5,5">
-    <path d="M 50 80 A 10 10 10 0 0 50,0 A 10 10 10 0 0 50,80" />
-  </svg>                                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Dawn_spacecraft_model.png/1920px-Dawn_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" class="dawn", id="dawn">
+                                <img src="https://nineplanets.org/wp-content/uploads/2019/09/ceres.png", class="ceres", id="ceres", title="Ceres">
+                            </div>
+                            <div class="orbit">
+                                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Dawn_spacecraft_model.png/1920px-Dawn_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" class="dawn", id="dawn", title="Dawn">
                             </div>
                         </div>
                     </div>
-                    <div class="bottom"></div>
+                    <div class="bottom">
+                        <div class="sButton" onclick="sourcesSwap()">Sources</div>
+                        <div class="sources">
+                            <p>Background: <br>
+                            Mars:<br>
+                            Ceres:<br>
+                            Dawn:
+                            Coding Assistance: https://www.w3schools.com, stackoverflow.com
+                            </p>
+                        </div>
+                    </div>
                 </div>
         </div>
     </body>

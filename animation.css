@@ -1,12 +1,12 @@
-@keyframes moveImg {
-    100%  { offset-distance: 100%; }
-  }
-
-.dawn {
-    offset-path: path('M 0 10 A 10 10 10 0 0 0,-10 A 10 10 10 0 0 0,10');
-    offset-rotate: auto;
-    animation: moveImg 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    position: absolute;
+@-webkit-keyframes orbit {
+    from {  -webkit-transform: rotate(0deg) translateX(25vh) rotate(0deg); }
+    to   {  -webkit-transform: rotate(360deg) translateX(25vh) rotate(-360deg); }
 }
+.dawn {
+  position:absolute;
+  top:25%;
+  margin:50px;
+  animation: orbit 60s forwards infinite;
+  animation-timing-function: linear;
+}
+
